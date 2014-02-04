@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="vertical"
+        android:padding="2.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res/com.devin.BluetoothRadio">
+
+    <RelativeLayout
+            android:id="@+id/topLayout"
+            android:background="@color/channelTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_margin="2.0dip">
+
+        <com.devin.BluetoothRadio.CustomSpinner
+                android:id="@+id/tunerSpinner"
+                android:background="@drawable/comm_spinner_down"
+                android:paddingRight="10.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="10.0dip"
+                android:layout_alignParentLeft="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <RelativeLayout
+                android:id="@+id/textRelativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/textLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                <TextView
+                        android:id="@+id/channelText"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:text="@string/channel"
+                        android:layout_weight="1.0"
+                        style="@style/indicatorBlueActivateText"/>
+
+                <TextView
+                        android:id="@+id/stereoText"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:text="@string/stereo"
+                        android:layout_weight="1.0"
+                        style="@style/indicatorBlueActivateText"/>
+
+                <!--<TextView-->
+                        <!--android:id="@+id/introText"-->
+                        <!--android:layout_width="0.0dip"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:text="@string/intro"-->
+                        <!--android:layout_weight="1.0"-->
+                        <!--style="@style/indicatorBlueDeactivateText"/>-->
+
+                <!--<TextView-->
+                        <!--android:id="@+id/recText"-->
+                        <!--android:layout_width="0.0dip"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:text="@string/rec"-->
+                        <!--android:layout_weight="1.0"-->
+                        <!--style="@style/indicatorRedDeactivateText"/>-->
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="4.0">
+
+            <ImageButton
+                    android:id="@+id/preChannelButton"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/tuner_freq_down"
+                    android:layout_alignParentLeft="true"/>
+
+
+            <ImageButton
+                    android:id="@+id/nextChannelButton"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/tuner_freq_up"
+                    android:layout_alignParentRight="true"
+                    android:layout_toLeftOf="@+id/preChannelButton"/>
+
+            <TextView
+                    android:id="@+id/fmText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_toLeftOf="@+id/nextChannelButton"
+                    android:layout_toRightOf="@+id/preChannelButton"
+                    android:text="108.0"
+                    style="@style/channelTextLarge"/>
+        </RelativeLayout>
+
+        <SeekBar
+                android:id="@+id/channelSeekBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:max="41"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/radioprogress"
+                android:thumb="@null"
+                android:thumbOffset="0.0dip"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/tunerFuncLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="3.0">
+
+            <ImageButton
+                    android:id="@+id/toInputButton"
+                    android:background="@android:color/transparent"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/tuner_btn_freq_input"
+                    android:layout_weight="1.0"/>
+
+            <ImageButton
+                    android:id="@+id/tunerScanDownBtn"
+                    android:background="@android:color/transparent"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/tuner_btn_scan_down"
+                    android:text="@string/test"
+                    android:layout_weight="1.0"/>
+
+            <ImageButton
+                    android:id="@+id/tunerScanUpBtn"
+                    android:background="@android:color/transparent"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/tuner_btn_scan_up"
+                    android:text="@string/test"
+                    android:layout_weight="1.0"/>
+
+            <ImageButton
+                    android:id="@+id/tunerIntroPlayBtn"
+                    android:background="@android:color/transparent"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/comm_btn_intro_on"
+                    android:layout_weight="1.0"/>
+        </LinearLayout>
+
+        <include
+                android:id="@+id/bottomTabLayout"
+                android:paddingTop="10.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="3.0"
+                layout="@layout/channel_table_group"/>
+
+        <include
+                android:id="@+id/tunerRecordProgressLayout"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="3.0"
+                layout="@layout/tuner_record"/>
+    </LinearLayout>
+</LinearLayout>

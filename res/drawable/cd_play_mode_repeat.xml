@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/cd_play_mode_repeat_d" />
+    <item android:state_pressed="true" android:drawable="@drawable/cd_play_mode_repeat_p" />
+    <item android:drawable="@drawable/cd_play_mode_repeat_n" />
+</selector>

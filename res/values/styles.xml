@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme is the default theme. -->
+    <style name="Theme" parent="android:Theme">
+    </style>
+
+	<!--
+		A theme that has a translucent background. Here we explicitly specify
+		that this theme is to inherit from the system's translucent theme,
+		which sets up various attributes correctly..
+	-->
+	<style name="Theme.Translucent" parent="android:style/Theme.Translucent">
+		<item name="android:windowBackground">@drawable/translucent_background</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:colorForeground">#fff</item>
+	</style>
+	<!--
+		Variation on our application theme that has a transparent background;
+		this example completely removes the background, allowing the activity
+		to decide how to composite. Also here we force the translucency
+		ourself rather than making use of the built-in translucent theme.
+	-->
+	<style name="Theme.Transparent">
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+		<item name="android:windowBackground">@drawable/transparent_background</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:colorForeground">#fff</item>
+	</style>
+    <style name="channelSpinnerText">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/DarkWhite</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="volumeSpinnerText">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">@color/DarkWhite</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="indicatorBlueActivateText">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/indicatorBlueTextNormal</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="indicatorBlueDeactivateText">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/indicatorBlueTextDisabled</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="indicatorRedActivateText">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/indicatorRedTextNormal</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="indicatorRedDeactivateText">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/indicatorRedTextDisabled</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="channelTextLarge">
+        <item name="android:textSize">62.0sp</item>
+        <item name="android:textColor">@color/indicatorBlueTextNormal</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="channelTextNormal">
+        <item name="android:textSize">65.0sp</item>
+        <item name="android:textColor">@color/indicatorBlueTextNormal</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="channelListText">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+    <style name="channelListFMText">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/HalfWhite</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="channelListGroupText">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+    <style name="channelListIndexText">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/indicatorBlueTextNormal</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="blueshen">
+        <item name="android:textSize">23.0sp</item>
+        <item name="android:textColor">@color/indicatorBlueTextNormal</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="recordFileNameText">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/HalfWhite</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="normalshen">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/HalfWhite</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="channelButtonTextSmall">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:textColor">@color/Black</item>
+    </style>
+    <style name="channelRadioButton">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:background">@drawable/radio_button_selector</item>
+    </style>
+    <style name="cdAlbumText">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/DarkWhite</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+    <style name="cdOrderText">
+        <item name="android:textSize">36.0sp</item>
+        <item name="android:textColor">@color/indicatorBlueTextNormal</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+    <style name="cdTitleText">
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+    <style name="cdArtistText">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/PaleWhite</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+    <style name="cdPlayTimeText">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/indicatorBlueTextNormal</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+    <style name="cdTotalTimeText">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/PaleWhite</item>
+        <item name="android:gravity">right|center</item>
+    </style>
+    <style name="versionText">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/LightWhite</item>
+    </style>
+    <style name="MyTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="switchStyle">@style/Switch</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="CustomSwitchTheme" parent="android:Theme.Black.NoTitleBar">
+        <item name="switchStyle">@style/Switch</item>
+    </style>
+    <style name="processBarStyle" parent="android:Theme.Dialog">
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:background">#FF000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="Switch" >
+        <item name="track">@drawable/switch_track_holo_dark</item>
+        <item name="thumb">@drawable/switch_inner_holo_dark</item>
+        <item name="switchTextAppearance">@android:style/TextAppearance.Small</item>
+        <item name="textOn">@string/capital_on</item>
+        <item name="textOff">@string/capital_off</item>
+        <item name="thumbTextPadding">12dip</item>
+        <item name="switchMinWidth">96dip</item>
+        <item name="switchPadding">16dip</item>
+    </style>
+</resources>

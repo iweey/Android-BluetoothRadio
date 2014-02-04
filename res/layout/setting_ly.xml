@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="@string/sound"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="7dp"
+            style="@style/normalshen"
+            android:background="#2F2F2F"
+            android:layout_gravity="left|center_vertical"/>
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:paddingLeft="7dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical"
+            android:id="@+id/set_eq"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_pop_up"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/normalshen"
+                android:text="EQ..."/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/set_text_eq"
+                android:text="ROCK"
+                style="@style/blueshen"/>
+    </LinearLayout>
+
+     <ImageView android:layout_width="fill_parent"
+             android:layout_height="3dip"
+             android:background="@android:drawable/divider_horizontal_dim_dark"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="7dp"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Balance..."
+                    style="@style/normalshen"
+                    android:id="@+id/textView1"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="L=9"
+                    android:id="@+id/set_text_balance"
+                    style="@style/blueshen"
+                    android:layout_gravity="center_horizontal|top"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="L7"/>
+
+            <SeekBar
+                    android:id="@+id/set_seekbar_balance"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:progressDrawable="@drawable/myprogress"
+                    android:max="100"
+                    android:indeterminate="false"
+                    android:thumbOffset="0.0dip"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="R7"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent"
+               android:layout_height="3dip"
+               android:background="@android:drawable/divider_horizontal_dim_dark"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:paddingLeft="7dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Fader..."
+                    style="@style/normalshen"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="L=6"
+                    android:id="@+id/set_text_fader"
+                    style="@style/blueshen"
+                    android:layout_gravity="center_horizontal|top"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="R7"/>
+
+            <SeekBar
+                    android:id="@+id/seek_seekbar_fader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:progressDrawable="@drawable/myprogress"
+                    android:max="100"
+                    android:indeterminate="false"
+                    android:thumbOffset="0.0dip"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="F7"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent"
+               android:layout_height="3dip"
+               android:background="@android:drawable/divider_horizontal_dim_dark"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="7dp"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="BackLight"
+                    style="@style/normalshen"/>
+
+            <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back Light:"
+                    android:id="@+id/set_text_back"
+                    style="@style/blueshen"
+                    android:layout_gravity="center_horizontal|top"/>-->
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="  "/>
+
+            <SeekBar
+                    android:id="@+id/set_seekbar_back"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:indeterminate="false"
+                    android:thumbOffset="0.0dip"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="  "/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="@string/generic"
+            android:gravity="center_vertical"
+            android:paddingLeft="7dp"
+            style="@style/normalshen"
+            android:background="#2F2F2F"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="left|center_vertical"
+            />
+
+    <com.devin.BluetoothRadio.Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/normalshen"
+            android:text="Loudness"
+            android:id="@+id/switch_Loudness"
+            android:paddingLeft="10dip"
+            android:paddingTop="10dip"
+            android:switchPadding="120dp"/>
+
+
+</LinearLayout>

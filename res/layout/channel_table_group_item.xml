@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        android:background="@color/channelButtonBackgroundNormal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RadioButton
+            android:gravity="center"
+            android:id="@+id/channelRadioBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:checked="false"
+            android:text="asdf"
+            android:button="@null"
+            style="@style/channelRadioButton"/>
+
+    <ImageButton
+            android:id="@+id/channelSaveBtn"
+            android:background="@color/channelButtonBackgroundNormal"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/comm_widget_save"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/channelEditLayout"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <ImageButton
+                android:id="@+id/channelOverwriteBtn"
+                android:background="@color/channelButtonBackgroundNormal"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:src="@drawable/comm_widget_save"
+                android:layout_weight="1.0"/>
+
+        <ImageButton
+                android:id="@+id/channelDelBtn"
+                android:background="@color/channelButtonBackgroundNormal"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:src="@drawable/comm_widget_delete"
+                android:layout_weight="1.0"/>
+    </LinearLayout>
+
+    <TextView
+            android:layout_gravity="top|left|center"
+            android:id="@+id/channelIdText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/channelButtonTextSmall"/>
+</FrameLayout>

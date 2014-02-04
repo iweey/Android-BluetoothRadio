@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="select_dialog_items">
+        <item>记入</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="appselect_array">
+        <item>Application</item>
+        <item>Remove</item>
+    </string-array>
+
+    <string-array name="eq_list_preference">
+        <item>off</item>
+        <item>Flat</item>
+        <item>Classic</item>
+        <item>Rock</item>
+        <item>Pop</item>
+    </string-array>
+
+</resources>

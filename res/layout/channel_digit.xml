@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:id="@+id/channelTextView1"
+            android:gravity="center"
+            android:paddingLeft="6dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+
+            />
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@android:drawable/divider_horizontal_dark"/>
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <TableLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <Button
+                        android:id="@+id/btn1"
+                        android:text="1"/>
+
+                <Button
+                        android:id="@+id/btn2"
+                        android:text="2"/>
+
+                <Button
+                        android:id="@+id/btn3"
+                        android:text="3"/>
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                        android:id="@+id/btn4"
+                        android:text="4"/>
+
+                <Button
+                        android:id="@+id/btn5"
+                        android:text="5"/>
+
+                <Button
+                        android:id="@+id/btn6"
+                        android:text="6"/>
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                        android:id="@+id/btn7"
+                        android:text="7"/>
+
+                <Button
+                        android:id="@+id/btn8"
+                        android:text="8"/>
+
+                <Button
+                        android:id="@+id/btn9"
+                        android:text="9"/>
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                        android:id="@+id/btn0"
+                        android:text="0"/>
+
+                <Button
+                        android:id="@+id/btnDot"
+                        android:text="."/>
+
+                <Button
+                        android:id="@+id/btnDel"
+                        android:text="Del"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

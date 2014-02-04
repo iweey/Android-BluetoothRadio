@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/start"
+            android:visibility="gone"
+            android:text="Start"/>-->
+    <Button
+            android:layout_width="306dip"
+            android:layout_height="214dip"
+            android:layout_gravity="center"
+            android:id="@+id/start"
+            android:text=""
+            android:background="@drawable/starticon"/>
+</FrameLayout>

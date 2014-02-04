@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+            android:id="@+id/bottomControlPanel"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_alignParentBottom="true"
+            layout="@layout/bottom_control_panel"/>
+
+    <TabHost
+            android:id="@+id/tabhost"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bottomControlPanel"
+            android:layout_alignParentTop="true">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:scrollbars="none">
+
+                <TabWidget
+                        android:id="@android:id/tabs"
+                        android:background="@color/tabWidgetBackground"
+                        android:layout_width="180dp"
+                        android:layout_height="50.0dip"
+                        android:layout_margin="0.0dip"
+                        android:tabStripEnabled="false"
+                        android:divider="@drawable/comm_mode_tab_split"
+                        android:tabStripLeft="@null"
+                        android:tabStripRight="@null"
+                        android:dividerPadding="0.0dip"/>
+            </HorizontalScrollView>
+
+            <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:background="@drawable/comm_bg351"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0">
+
+                <FrameLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <include
+                            layout="@layout/tuner_fragment"
+                            android:id="@+id/include_tuner_ly"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </FrameLayout>
+
+                <FrameLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <include
+                            layout="@layout/music_base_fragment"
+                            android:id="@+id/include_usb_ly"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </FrameLayout>
+
+                <FrameLayout
+                        android:id="@+id/tab3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <include
+                            layout="@layout/music_base_fragment"
+                            android:id="@+id/include_sd_ly"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </FrameLayout>
+
+                <FrameLayout
+                        android:id="@+id/tab4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                    <include
+                            layout="@layout/tab_phone"
+                            android:id="@+id/include_phone_ly"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                        android:id="@+id/tab5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                    <include
+                            layout="@layout/tab_map"
+                            android:id="@+id/include_map_ly"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                        android:id="@+id/tab5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                </FrameLayout>
+
+                <FrameLayout
+                        android:id="@+id/tab6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                    <include
+                            layout="@layout/tab_vol"
+                            android:id="@+id/include_vol_ly"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </FrameLayout>
+
+                <FrameLayout
+                        android:id="@+id/tab7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <include
+                            layout="@layout/aux_fragment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </FrameLayout>
+
+                <FrameLayout
+                        android:id="@+id/tab8"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <include
+                            layout="@layout/a2dp2_fragment"
+                            android:id="@+id/include_a2dp_ly"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </FrameLayout>
+
+                <FrameLayout
+                        android:id="@+id/tab9"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                    <include
+                            layout="@layout/tab_tab9"
+                            android:id="@+id/include_tab9_ly"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                        android:id="@+id/tab10"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                    <include
+                            layout="@layout/tab_tab10"
+                            android:id="@+id/include_tab10_ly"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                        android:id="@+id/tab11"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                    <include
+                            layout="@layout/tab_tab11"
+                            android:id="@+id/include_tab11_ly"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </FrameLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>

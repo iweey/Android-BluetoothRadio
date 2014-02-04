@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+            android:id="@+id/rdsStereoText"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/stereo"
+            android:layout_weight="1.0"
+            style="@style/indicatorBlueActivateText"/>
+
+    <TextView
+            android:id="@+id/afText"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/af"
+            android:layout_weight="1.0"
+            style="@style/indicatorBlueActivateText"/>
+
+    <TextView
+            android:id="@+id/taText"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/ta"
+            android:layout_weight="1.0"
+            style="@style/indicatorBlueDeactivateText"/>
+
+    <TextView
+            android:id="@+id/tpText"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/tp"
+            android:layout_weight="1.0"
+            style="@style/indicatorRedDeactivateText"/>
+
+    <TextView
+            android:id="@+id/ptyText"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/pty"
+            android:layout_weight="1.0"
+            style="@style/indicatorBlueActivateText"/>
+
+    <TextView
+            android:id="@+id/eonText"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/eon"
+            android:layout_weight="1.0"
+            style="@style/indicatorBlueDeactivateText"/>
+
+    <TextView
+            android:id="@+id/regText"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/reg"
+            android:layout_weight="1.0"
+            style="@style/indicatorBlueDeactivateText"/>
+</LinearLayout>
